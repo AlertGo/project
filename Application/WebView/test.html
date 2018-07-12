@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=750, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta content="telephone=no" name="format-detection">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta http-equiv="Access-Control-Allow-Origin" content="*">
+	<link rel="stylesheet" type="text/css" href="../.././Public/base/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="../.././Public/base/css/bass.css" />
+	<link rel="stylesheet" type="text/css" href="../.././Public/base/css/swiper-4.3.3.min.css" />
+	<link rel="stylesheet" type="text/css" href="../.././Public/page/css/index.css" />
+	<script type="text/javascript" src="../.././Public/base/js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="../.././Public/base/js/swiper-4.3.3.min.js"></script>
+	<script type="text/javascript" src="../.././Public/base/js/ZRrem.js"></script>
+	<script type="text/javascript" src="../.././Public/base/js/core.js"></script>
+	<script type="text/javascript" src="../.././Public/page/js/index.js"></script>
+	<style type="text/css">
+		.swiper-container {
+		    width: 100%;
+		    height: 2.5rem;
+		} 
+	</style>
+</head>
+<body>
+<div id="app">
+	<div class="header">
+		<!-- 通用头 -->
+		<div class="head-page head-page-home">
+			<div class="head-p-logo">
+				<img src="../.././Public/image/logo.png" />
+			</div>
+			<div class="head-p-search">
+				<input type="text" placeholder="作者编号或名称" class="col_33">
+				<label>搜索</label>
+			</div>
+			<div class="head-p-sides">
+				<img src="../.././Public/image/about.png">
+			</div>
+		</div>
+	</div>
+	<div class="plan">
+		<div class="swiper-container">
+    <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url(img/nature1.jpg)">1</div>
+            <div class="swiper-slide" style="background-image:url(img/nature2.jpg)">2</div>
+            <div class="swiper-slide" style="background-image:url(img/nature3.jpg)">3</div>
+            <div class="swiper-slide" style="background-image:url(img/nature4.jpg)">4</div>
+            <div class="swiper-slide" style="background-image:url(img/nature5.jpg)">5</div>
+            <div class="swiper-slide" style="background-image:url(img/nature6.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(img/nature7.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(img/nature8.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(img/nature9.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(img/nature10.jpg)"></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+
+
+	</div>
+	<div class="footer"></div>
+</div>
+</body>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: '3',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+</html>

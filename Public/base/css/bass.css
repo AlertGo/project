@@ -1,5 +1,5 @@
 html {
-    width: 750px;
+    width: 100%;
     height: 100%;
 }
 body {
@@ -9,9 +9,142 @@ body {
     overflow: hidden;
     height: 100%;
 }
+.col_33{color:#333333;}
+.col_66{color:#666666;}
+.col_99{color:#999999;}
+.col_b9{color:#b32b2b;}
+.bgc_b3{
+    background-color: #b32b2b;
+}
+#app input::-webkit-input-placeholder{
+    color:#bfbfbf;
+}
+#app input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    color:#bfbfbf;
+}
+#app input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color:#bfbfbf;
+}
+#app input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
+    color:#bfbfbf;
+}
 #app {
 	width: 10rem; 
 	height: 100%;
-	overflow-y: auto;
-	overflow-x: hidden;
+	overflow: hidden;
+    position: relative;
+    left: 0;top: 0;
+}
+.header{
+    width: 100%;
+    height: 1.2rem;
+    position: absolute;
+    left: 0;top: 0;
+}
+.footer{
+    width: 100%;
+    height: 1.06rem;
+    position: absolute;
+    left: 0;bottom: 0;
+}
+.head-page {
+    width: 100%;
+    height: 1.2rem;
+    overflow: hidden;
+    font-size: 0;
+}
+.planbody{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding-top: 1.2rem;
+    padding-bottom: 1.06rem;
+    box-sizing: border-box;
+
+}
+.planbody-foot{
+    width: 100%;
+    height: auto;
+    font-size: 0;
+}
+.planbody-foot-describe {
+    width: 9.33rem;
+    height: auto;
+    overflow: hidden;
+    padding-top: 0.466rem;
+    padding-bottom: 0.4rem;
+    margin: 0 auto;
+}
+.foot-describe, .foot-pay, .foot-RQcode {
+    display: inline-block;
+    vertical-align: top;
+    color: #ffffff;
+}
+.foot-describe{
+    width:  4.66rem;
+    box-sizing: border-box;
+    padding-left: 0.35rem;
+}
+.foot-describe, .foot-pay {
+    font-size: 0.266rem;
+    line-height: 0.266rem;
+}
+.foot-describe p, .foot-pay p{
+    margin-bottom: 0.186rem;
+    white-space:nowrap;
+
+}
+.foot-RQcode {
+    width: 2.17rem;
+    height: 2.17rem;
+    background-image: url('../.././image/rqcode_bor.png');
+    background-size: 2.17rem 2.17rem;
+    margin-left: 0.29rem;
+    margin-right: 0.32rem;
+
+}
+.foot-RQcode img{
+    display: block;
+    width: 1.93rem;
+    height: 1.93rem;
+    margin: 0 auto;
+    margin-top: 0.12rem;
+
+}
+.foot-pay{
+    width: 1.6rem;
+    text-align: center;
+}
+.foot-pay p {
+    background-color: white;
+    color: #b32b2b;
+    padding: 0.09rem 0.05rem;
+    border-radius: 0.05rem;
+    display: inline-block;
+    font-weight: bold;
+}
+.foot-pay p:nth-child(1){
+    padding: 0;
+    background-color: transparent;
+    color: white;
+    font-size: 0.4rem;
+    line-height: 0.4rem;
+    font-weight: 500;
+}
+.planbody-foot-corp{
+    width: 100%;
+    height: 1.1rem;
+    padding-top: 0.28rem;
+    box-sizing: border-box;
+    color: #8e8e8e;
+    text-align: center;
+}
+.planbody-foot-corp p:nth-child(1){
+    margin-bottom: 0.146rem;
+    font-size: 0.24rem;
+    line-height: 0.24rem;
+}
+.planbody-foot-corp p:nth-child(2){
+    font-size: 0.16rem;
+    line-height: 0.16rem;
 }
