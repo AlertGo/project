@@ -47,3 +47,94 @@
 	display: inline-block;
 	width: 0.733rem;
 }
+.planbody-nav{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	font-size: 0;
+	padding-top: 0.72rem;
+	padding-bottom:0.57rem;
+}
+.planbody-nav a{
+	display: inline-block;
+	width: 25%;
+	height: auto;
+	vertical-align: top;
+}
+.planbody-nav dl{
+	text-align: center;
+	color: #333333;
+}
+.planbody-nav dl img{
+	display: inline-block;
+}
+.planbody-nav dt{
+	margin-bottom: 0.253rem;
+}
+.planbody-nav dd{
+	display: inline-block;
+	font-size: 0.373rem;
+	height: 0.493rem;
+	line-height: 0.493rem;
+	padding: 0 0.146rem;
+	border-radius: 0.06rem;
+}
+.planbody-active{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	font-size: 0;
+}
+.planbody-active-main{
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	height: auto;
+	box-sizing: border-box;
+	border-top: 2px solid #b1b1b1;
+	padding-top: 0.613rem;
+	padding-bottom: 0.613rem;
+}
+.planbody-active-main.bor_r{
+	border-right: 1px solid #b1b1b1;
+}
+.planbody-active-main.bor_l{
+	border-left: 1px solid #b1b1b1;
+}
+.planbody-active-main>div{
+	display: inline-block;
+	vertical-align: middle;
+}
+.active-main-text{
+	width: 2.826rem;
+	overflow: hidden;
+	white-space: nowrap;
+	text-align: center;
+}
+.active-main-text p:nth-child(1){
+	color: #272626;
+	font-size: 0.48rem;
+	line-height: 0.48rem;
+	margin-bottom: 0.24rem;
+}
+.active-main-text p:nth-child(2){
+	color: #b1b1b1;
+	font-size: 0.266rem;
+	line-height: 0.266rem;
+	margin-bottom: 0.24rem;
+}
+.active-main-text p:nth-child(3){
+	color: #b32b2b;
+	font-size: 0.266rem;
+	line-height: 0.266rem;
+}
+.active-main-img,.active-main-img img{
+	width: 1.76rem;
+	height: 1.76rem;
+	display: inline-block;
+}
+.active-main-img{
+	overflow: hidden;
+	border-radius: 50%;
+	border:2px solid #f2f2f2;
+}

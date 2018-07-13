@@ -8,6 +8,7 @@ body {
     margin: 0 auto;
     overflow: hidden;
     height: 100%;
+    font-family: "Microsoft Yahei","Helvetica","HeitiSC";
 }
 .col_33{color:#333333;}
 .col_66{color:#666666;}
@@ -121,7 +122,6 @@ body {
     padding: 0.09rem 0.05rem;
     border-radius: 0.05rem;
     display: inline-block;
-    font-weight: bold;
 }
 .foot-pay p:nth-child(1){
     padding: 0;
@@ -147,4 +147,23 @@ body {
 .planbody-foot-corp p:nth-child(2){
     font-size: 0.16rem;
     line-height: 0.16rem;
+}
+/*商品展示*/
+.planbody-shop {
+    width: 9.346rem;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.shop-title{
+    width: 100%;
+    position: relative;
+    height: 1.04rem;
+    border-bottom: #828282 solid #828282 ;
+    padding-bottom: 0.866rem;
+    box-sizing: border-box;
+}
+.shop-title span{
+    position: absolute;
+    
 }
