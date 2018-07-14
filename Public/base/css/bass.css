@@ -304,6 +304,7 @@ body {
     background-color: rgba(255,255,255,.3);
     border-radius: 45%;
     overflow: hidden;
+    z-index: 1;
 }
 .show-view p:nth-child(6) button{
     width: 1.92rem;
@@ -314,6 +315,9 @@ body {
     font-size: 0.346rem;
     line-height: 0.74rem;
     color: white;
+    background-color: #cc3333;
+    outline:none;
+    border:none;
 }
 .shop-controll{
     width: 100%;
