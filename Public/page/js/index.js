@@ -1,5 +1,5 @@
 window.onload = function (){
-	var VM = {
+	window.VM = {
 		api:{},
 		data:{
 			bannerMsg:[
@@ -363,7 +363,7 @@ window.onload = function (){
 				    pagination: {
 				      el: '.swiper-pagination',
 				    }
-  				})   
+  				})
 			},
 			starInit:function (_self){
 				var h = '';
@@ -394,7 +394,7 @@ window.onload = function (){
 						modifier: 1,
 						slideShadows : true,
 					}
-  				})   
+  				})
 			}
 		}
 	}

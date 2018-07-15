@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=750, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta content="telephone=no" name="format-detection">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta http-equiv="Access-Control-Allow-Origin" content="*">
+	<link rel="stylesheet" type="text/css" href="/project/Public/base/css/reset.css?d=" />
+	<link rel="stylesheet" type="text/css" href="/project/Public/base/css/bass.css" />
+	<link rel="stylesheet" type="text/css" href="/project/Public/base/css/swiper-4.3.3.min.css" />
+	<link rel="stylesheet" type="text/css" href="/project/Public/page/css/house.css" />
+	<link rel="stylesheet" type="text/css" href="/project/Public/iconfont/iconfont.css" />
+	<script type="text/javascript" src="/project/Public/base/js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="/project/Public/base/js/swiper-4.3.3.min.js"></script>
+	<script type="text/javascript" src="/project/Public/base/js/ZRrem.js"></script>
+	<script type="text/javascript" src="/project/Public/base/js/core.js"></script>
+	<script type="text/javascript" src="/project/Public/page/js/house.js"></script>
+	<style type="text/css">
+		#swiper-container-banner {
+		    width: 100%;
+		    height: 5.2rem;
+		}
+		#swiper-container-banner a{
+			display: inline-block;
+			width: 100%;
+			height: 100%;
+		}
+		#swiper-container-banner a img{
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+</head>
+<body>
+<div id="app">
+	<div id="header" class="header bgc_c3">
+		<!-- 通用头 -->
+		<div id="head-page" class="head-page head-page-home">
+      <div class="head-left">
+          <div class="head-backpage">
+            <span class="head-backpage-img"></span><span>返回上页</span>
+          </div>
+          <div class="head-gohome">
+            <span class="gohome-bor"></span><span class="head-gohome-img"></span><span>首页</span>
+          </div>
+      </div>
+		  <div class="head-title">
+          收藏阁
+		  </div>
+			<div class="head-p-sides head-p-sides-side">
+				<img src="/project/Public/image/side.png">
+			</div>
+		</div>
+	</div>
+	<div class="planbody bgc_cc">
+		<!-- banner -->
+		<div>
+			<div id="swiper-container-banner" class="swiper-container">
+			    <div id="swiper-wrapper-banner" class="swiper-wrapper">
+
+			    </div>
+			    <!-- 分页器 -->
+			    <div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<!-- 商品展示 -->
+		<!-- <div style="height: 0.266rem;" class="bgc_cc"></div> -->
+		<div id="planbody-shop-box" class="planbody-shop-box"></div>
+		<div style="height: 0.266rem;" class="bgc_cc"></div>
+		<!-- 门店 -->
+		<div id="planbody-promise" class="planbody-promise bgc_ff">
+
+		</div>
+		<!-- 通用底部元素 片段截取 -->
+		<div id="planbody-foot_box"></div>
+	</div>
+	<div class="footer">
+		<div>
+			<img src="/project/Public/image/online.png">在线客服
+		</div>
+		<div>
+			<img src="/project/Public/image/tel.png">咨询热线
+		</div>
+		<div>
+			<img src="/project/Public/image/shop.png">在线商城
+		</div>
+		<div>
+			<img src="/project/Public/image/select.png">快速查询
+		</div>
+	</div>
+</div>
+</body>
+</html>
+<script>
+   $('#header').load('/project/Application/WebView/bass.html #head-page')
+   $('#planbody-foot_box').load('/project/Application/WebView/bass.html #planbody-foot')
+
+   $('#planbody-promise').load('/project/Application/WebView/bass.html #promise',function (){
+     if(window.VM!=undefined){
+        window.VM.events.tabStore(window.VM) ;
+
+     }
+    // alert(window.VM)
+   })
+</script>
